@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine’s Week 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Animate.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 🔝 Navigation -->
+  <nav class="nav-bar">
+    <div class="logo">💖 LoveWeek</div>
+    <button id="musicBtn" class="music-btn">🎵 Music</button>
+  </nav>
+
+  <!-- 🎵 Music -->
+  <audio id="bgMusic" loop>
+    <source src="Ishq_Hai.mp4" type="video/mp4">
+  </audio>
+
+
+  <!-- 💕 Floating Hearts -->
+  <div class="floating-layer">
+    <span>💖</span>
+    <span>💘</span>
+    <span>🌸</span>
+    <span>❤️</span>
+  </div>
+
+  <!-- ✅ PAGE WRAPPER (CRITICAL FIX) -->
+  <div class="page-wrapper">
+
+    <!-- 💎 Main Card -->
+    <main class="glass-card animate__animated animate__fadeInUp">
+
+      <img
+        class="hero-gif animate__animated animate__zoomIn"
+        src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZsZWRxZHRmbWpkZWZkdmJ4d3Ztbm14Y3d4Njg5M3R1ZTY3Y2Z5ZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kZqbBT64ECtjy/giphy.gif"
+        alt="Cute Love Gif"
+      />
+
+      <h1 id="dayTitle" class="title"></h1>
+
+      <p class="romantic-text">
+        Love isn’t about perfection 💫 It’s about smiles that last longer,
+        hearts that beat together 💕 and moments that turn into forever ✨
+      </p>
+
+      <p id="dayMessage" class="day-message"></p>
+
+      <!-- 💍 Proposal -->
+      <section id="proposal">
+        <h2 class="question">Will you be my Valentine? 💖</h2>
+
+        <div class="btn-group">
+          <button id="yesBtn" class="yes-btn">YES 💕</button>
+          <button id="noBtn" class="no-btn">NO 😅</button>
+        </div>
+      </section>
+
+      <!-- 🎉 Success -->
+      <section id="success" class="hidden">
+        <img
+          class="success-gif"
+          src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif"
+        />
+        <h2>I knew it! You’ve made my day! 👑✨</h2>
+        <p class="success-text">
+          From this moment on, my smiles belong to you 💖 Thank you for choosing
+          love, laughter, and magic 🌹
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- ➡ Next -->
+  <a href="./next page/next.html" class="next-btn pulse">Next →</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
