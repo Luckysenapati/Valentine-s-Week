@@ -1,27 +1,5 @@
-# HTML, CSS, JS (Auto Refresh)
-
-This template is a starter for building a website with HTML, CSS and JS, powered by [Vite](https://vitejs.dev/). HTML provides the basic structure, CSS controls formatting, and JavaScript controls the behavior of different elements.
-
-Hit run to see this project in action. It will auto-refresh as you edit the HTML, CSS and JS files.
-
-## Disable Auto Refresh
-
-If you find the auto refresh getting in your way, go to [vite.config.js](./vite.config.js) and update it set `hmr` to false to disable hot module reloading (HMR). The full config will look like this:
-
-```js
-export default defineConfig({
-  plugins: [],
-  server: {
-    host: '0.0.0.0',
-    hmr: false, // Change this line to `false` disable auto-refreshing.
-  }
-})
-```
-
-## Packages
-
-Because this template uses Vite to build your code, you can add install and use npm packages. Simple open the Packager tool to search and manage your packages.
-
-## Learn More
-
-Check out [the vite docs](https://vitejs.dev) to learn more about configuring a frontend application.
+💘 Valentine’s Week Interactive Web Experience
+A beautiful, responsive single-page Valentine’s Week website built with HTML5, CSS (Glassmorphism), Tailwind CSS, and Vanilla JavaScript.
+The site dynamically changes its theme, emojis, background, GIFs, and messages based on the Valentine’s Week date (Feb 7–14).
+It features animated backgrounds, floating emojis, a playful “Will you be my Valentine?” proposal with a runaway No button, music toggle, and a delightful confetti celebration on Yes.
+Designed for smooth UX, mobile responsiveness, and a joyful romantic experience. 💖✨
