@@ -337,6 +337,54 @@ body {
 }
 
 /* =========================================
+   NEXT BUTTON STYLES
+   ========================================= */
+
+.next-btn {
+  position: fixed;
+  bottom: 30px;          /* Position from bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center it perfectly */
+  
+  background: #fff;        /* White background */
+  color: #ff4d6d;        /* Pink text */
+  padding: 12px 35px;
+  border-radius: 999px;     /* Fully rounded */
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;    /* Remove underline */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  
+  z-index: 100;           /* IMPORTANT: Ensures it sits on top of the card */
+  transition: transform 0.3s ease;
+}
+
+.next-btn:hover {
+  transform: translateX(-50%) scale(1.1); /* Grow slightly on hover */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* --- PULSE ANIMATION --- */
+@keyframes pulse-animation {
+  0% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 77, 109, 0.7);
+  }
+  70% {
+    transform: translateX(-50%) scale(1.08);
+    box-shadow: 0 0 0 15px rgba(255, 77, 109, 0);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    box-shadow: 0 0 0 0 rgba(255, 77, 109, 0);
+  }
+}
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+/* =========================================
    UTILITIES
    ========================================= */
 .hidden {
