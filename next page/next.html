@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>💖 You vs Me – Valentine Face-Off</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+  <link rel="stylesheet" href="next.css">
+</head>
+<body>
+
+<!-- Background Elements -->
+<div class="floating-hearts"></div>
+
+<!-- MAIN CONTAINER -->
+<div class="container-wrapper">
+
+  <!-- HERO SECTION -->
+  <section class="hero fade-in" id="hero">
+    <h1>🎭 The Ultimate “You vs. Me” Face-Off</h1>
+    <p class="hero-text">
+      Thoda pyaar ❤️, thoda drama 🎭, thodi roasting 😜 <br>
+      Ready to reveal the truth?
+    </p>
+
+    <div class="hero-buttons">
+      <button class="btn yes-btn" id="heroYesBtn">Yes 💖</button>
+      <button class="btn no-btn" id="heroNoBtn">No 🙈</button>
+    </div>
+
+    <p class="tease hidden" id="tease">
+      Arey arey 😏 bhaag mat… pyaar mein thoda fun zaroori hai 💕
+    </p>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="form-section hidden" id="formSection">
+    <h2>Send all the responses to you and your partner</h2>
+
+    <form id="detailsForm">
+      <div class="input-group">
+        <input type="text" id="yourName" required />
+        <label>Your Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="partnerName" required />
+        <label>Partner Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="yourEmail" required />
+        <label>Your Email ID</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="partnerEmail" required />
+        <label>Partner Email ID</label>
+      </div>
+
+      <button type="submit" class="btn submit-btn">
+        Start the Love Game 💘
+      </button>
+    </form>
+  </section>
+
+  <!-- QUESTION SECTION -->
+  <section class="question-section hidden" id="questionSection">
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    
+    <div class="question-card" id="questionCard">
+      <h2 id="questionText"></h2>
+      
+      <p style="font-size: 0.9rem; opacity: 0.8; margin-top:5px;">Select the correct option!</p>
+
+      <div class="options">
+        <button class="option-btn" id="optionUser"></button>
+        <button class="option-btn" id="optionPartner"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL SUMMARY -->
+  <section class="final-section hidden" id="finalSection">
+    <h2>💌 Love Report Ready!</h2>
+    <p>
+      Mazak, pyaar, drama & memories — sab kuch pack ho chuka hai 💖 <br>
+      Ab bas ek click aur…
+    </p>
+
+    <div class="summary-box">
+       <span id="resultSummary">Calculating chemistry... ⚗️</span>
+    </div>
+
+    <button class="btn send-btn" id="emailBtn">
+      Send these responses to emails 💌
+    </button>
+  </section>
+
+</div> <!-- End Container -->
+
+<!-- NAVIGATION: The Requested "Next Page" Button -->
+<div class="bottom-nav" id="bottomNav">
+  <button class="btn next-btn" id="nextPageBtn">Next Page ➡️</button>
+</div>
+
+<script src="next.js"></script>
+</body>
+</html>
